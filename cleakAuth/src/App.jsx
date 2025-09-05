@@ -4,12 +4,12 @@ import Navbar from "./Navbar";
 import AppRoutes from "./AppRoutes";
 
 function App() {
-  const location = useLocation(); // get current route
+  const location = useLocation();
   const hideNavbar = location.pathname === "/login" || location.pathname === "/signup";
 
   return (
     <div className="w-full min-h-screen bg-gray-200">
-      {!hideNavbar && <Navbar />}  {/* hide Navbar on login/signup */}
+      {!hideNavbar && <Navbar />} 
       <div className="p-4">
         <AppRoutes />
       </div>

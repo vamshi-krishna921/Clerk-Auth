@@ -8,7 +8,7 @@ import SignUp from "./components/SignUp";
 
 function AppRoutes() {
   return (
-    <Routes>
+    <Routes> 
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<Products />} />
       <Route path="/contact" element={<Contact />} />

@@ -1,8 +1,16 @@
+import { RedirectToSignIn, SignedIn, SignedOut } from '@clerk/clerk-react'
 import React from 'react'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <>
+      <SignedIn>
+        <h1>Contact Page</h1>
+      </SignedIn>
+      <SignedOut>
+        <RedirectToSignIn redirectUrl="/login" />
+      </SignedOut>
+    </>
   )
 }
 

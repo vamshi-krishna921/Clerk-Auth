@@ -4,7 +4,7 @@ import { SignIn } from "@clerk/clerk-react";
 function Login() {
   return (
     <div className="w-full h-[100vh] overflow-hidden flex justify-center items-center">
-      <SignIn />
+      <SignIn signUpUrl="/signup" forceRedirectUrl={"/home"}/>
     </div>
   );
 }
